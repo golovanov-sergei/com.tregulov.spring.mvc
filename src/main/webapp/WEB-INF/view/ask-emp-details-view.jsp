@@ -8,8 +8,12 @@
     <title>Document</title>
 </head>
 <body>
-<h2>Welcome to the jungle!1!!</h2>
+<h2>Dear Employee, please enter your details</h2>
 <br>
-<a href="askDetails">askDetails</a>
+<br>
+<form action="showDetails" method="get">
+    <input type="text" name="employeeName" placeholder="Write your name"/>
+    <input type="submit"/>
+</form>
 </body>
 </html>

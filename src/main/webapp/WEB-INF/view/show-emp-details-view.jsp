@@ -8,8 +8,10 @@
     <title>Document</title>
 </head>
 <body>
-<h2>Welcome to the jungle!1!!</h2>
+<h2>Dear Employee, you are WELCOME!</h2>
 <br>
-<a href="askDetails">askDetails</a>
+<br>
+<br>
+Your name: ${param.employeeName}
 </body>
 </html>
