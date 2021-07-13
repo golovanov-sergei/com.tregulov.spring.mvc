@@ -21,17 +21,23 @@
     Salary <form:input path="salary"/>
     <br><br>
     Department <form:select path="department">
-<%--    <form:option value="Information Technology" label="IT"/>--%>
-<%--    <form:option value="Human resources" label="HR"/>--%>
-<%--    <form:option value="Sales " label="Sales"/>--%>
+    <%--    <form:option value="Information Technology" label="IT"/>--%>
+    <%--    <form:option value="Human resources" label="HR"/>--%>
+    <%--    <form:option value="Sales " label="Sales"/>--%>
     <form:options items="${employee.departments}"/>
 </form:select>
     <br><br>
     Pick up a car
-<%--    <form:radiobutton path="carBrand" value="BMW" label="BMW"/>--%>
-<%--    <form:radiobutton path="carBrand" value="VW" label="VW"/>--%>
-<%--    <form:radiobutton path="carBrand" value="Audi" label="Audi"/>--%>
+    <%--    <form:radiobutton path="carBrand" value="BMW" label="BMW"/>--%>
+    <%--    <form:radiobutton path="carBrand" value="VW" label="VW"/>--%>
+    <%--    <form:radiobutton path="carBrand" value="Audi" label="Audi"/>--%>
     <form:radiobuttons path="carBrand" items="${employee.carBrands}"/>
+    <br><br>
+    Foreign language(s):
+<%--    <form:checkbox path="languages" label="EN" value="English"/>--%>
+<%--    <form:checkbox path="languages" label="DE" value="Deutch"/>--%>
+<%--    <form:checkbox path="languages" label="FR" value="Francais"/>--%>
+    <form:checkboxes path="languages" items="${employee.languageList}"/>
     <br><br>
     <input type="submit" value="OK">
 </form:form>
