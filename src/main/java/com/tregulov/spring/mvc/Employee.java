@@ -1,5 +1,7 @@
 package com.tregulov.spring.mvc;
 
+import com.tregulov.spring.mvc.validation.CheckEmail;
+
 import javax.validation.constraints.*;
 import java.util.HashMap;
 import java.util.Map;
@@ -22,6 +24,8 @@ public class Employee {
     private Map<String,String> languageList;
     @Pattern(regexp = "\\d{3}-\\d{2}-\\d{2}", message = " please wright phone number in XXX-XX-XX format")
     private String phoneNumber;
+    @CheckEmail(value = "xyz.com", message = " email must be in xyz.com domain")
+    private String email;
 
     public Employee() {
         departments = new HashMap<>();
@@ -39,6 +43,14 @@ public class Employee {
         languageList.put("Deutch","DE");
         languageList.put("French","FR");
 
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
     }
 
     public String getPhoneNumber() {
