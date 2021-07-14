@@ -16,6 +16,7 @@
 <%--Your name: ${param.employeeName}--%>
 Your name: ${employee.name}<br>
 Your surname: ${employee.surname}<br>
+Phone number: ${employee.phoneNumber}<br>
 Your salary: ${employee.salary}<br>
 Your department: ${employee.department}<br>
 Your car: ${employee.carBrand}<br>
